@@ -213,7 +213,7 @@ function typeLoading() {
     el.textContent += loadingMessage[i++];
     if (i === loadingMessage.length) {
       clearInterval(t);
-      setTimeout(showScene, 2000);
+      setTimeout(showScene, 1500);
     }
   }, 120);
 }
@@ -269,11 +269,12 @@ function typeLines() {
         i++;
         setTimeout(nextLine, 600);
       }
-    }, 1000);
+    }, 600);
   }
   nextLine();
 }
 </script>
 
 </body>
+
 </html>
